@@ -1,16 +1,16 @@
 module.exports = {
   pathPrefix: "/experience-to-blog-post",
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Experience |> Blog.post`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `ShigeruIto`,
+      summary: `Shigeru Ito's tech blog`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
-    social: {
-      twitter: `kylemathews`,
-    },
+    description: `No enginner, No programmer, No coder`,
+    siteUrl: `https://yellowsman/github.io/experience-to-blog-post`,
+	social: {
+      twitter: `ShigeItoEx`,
+	}
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -113,7 +113,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
+        name: `Experience |> Blog.post`,
         short_name: `GatsbyJS`,
         start_url: `/`,
         background_color: `#ffffff`,
