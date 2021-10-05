@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Experience |> Blog.post]]></title><description><![CDATA[No enginner, No programmer, No coder]]></description><link>https://yellowsman/github.io/experience-to-blog-post</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 04 Oct 2021 18:43:51 GMT</lastBuildDate><item><title><![CDATA[My Third Post]]></title><description><![CDATA[This weblog is written by Shigeru Ito.]]></description><link>https://yellowsman/github.io/experience-to-blog-post/my-third-post/</link><guid isPermaLink="false">https://yellowsman/github.io/experience-to-blog-post/my-third-post/</guid><pubDate>Tue, 05 Oct 2021 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;This weblog is written by Shigeru Ito.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[New Beginnings]]></title><description><![CDATA[Far far away, behind the word mountains, far from the countries Vokalia and
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Experience |> Blog.post]]></title><description><![CDATA[No enginner, No programmer, No coder]]></description><link>https://yellowsman/github.io/experience-to-blog-post</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 05 Oct 2021 13:23:12 GMT</lastBuildDate><item><title><![CDATA[My Third Post]]></title><description><![CDATA[This weblog is written by Shigeru Ito. Hi! Hi! hogehoge This is a  too.]]></description><link>https://yellowsman/github.io/experience-to-blog-post/my-third-post/</link><guid isPermaLink="false">https://yellowsman/github.io/experience-to-blog-post/my-third-post/</guid><pubDate>Tue, 05 Oct 2021 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;This weblog is written by Shigeru Ito.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; hogehoge &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; hoge2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;100&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+        &lt;div class=&quot;gatsby-code-title&quot;&gt;
+          &lt;span&gt;sample_code.exs&lt;/span&gt;
+        &lt;/div&gt;
+       
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;elixir&quot;&gt;&lt;pre class=&quot;language-elixir&quot;&gt;&lt;code class=&quot;language-elixir&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;defmodule&lt;/span&gt; &lt;span class=&quot;token module class-name&quot;&gt;Hoge&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;do&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; hoge&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;do:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; hoge2 &lt;span class=&quot;token keyword&quot;&gt;do&lt;/span&gt;
+    &lt;span class=&quot;token number&quot;&gt;1000&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Hi!&lt;/h3&gt;
+&lt;h1&gt;Hi!&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;hogehoge&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is a &lt;code class=&quot;language-text&quot;&gt;line highlight&lt;/code&gt; too.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[New Beginnings]]></title><description><![CDATA[Far far away, behind the word mountains, far from the countries Vokalia and
 Consonantia, there live the blind texts. Separated they live in…]]></description><link>https://yellowsman/github.io/experience-to-blog-post/new-beginnings/</link><guid isPermaLink="false">https://yellowsman/github.io/experience-to-blog-post/new-beginnings/</guid><pubDate>Thu, 28 May 2015 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;Far far away, behind the word mountains, far from the countries Vokalia and
 Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
 right at the coast of the Semantics, a large language ocean. A small river named
@@ -57,7 +76,7 @@ copy.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The copy warned the Little Blind Text, that where it came from it would have
 been rewritten a thousand times and everything that was left from its origin
-would be the word “and” and the Little Blind Text should turn around and
+would be the word &quot;and&quot; and the Little Blind Text should turn around and
 return to its own, safe country.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;But nothing the copy said could convince her and so it didn’t take long until a
@@ -86,19 +105,19 @@ met a copy.&lt;/p&gt;
 &lt;h6&gt;Slapped cozy a that lightheartedly and far&lt;/h6&gt;
 &lt;p&gt;The copy warned the Little Blind Text, that where it came from it would have
 been rewritten a thousand times and everything that was left from its origin
-would be the word “and” and the Little Blind Text should turn around and return
+would be the word &quot;and&quot; and the Little Blind Text should turn around and return
 to its own, safe country. But nothing the copy said could convince her and so it
 didn’t take long until a few insidious Copy Writers ambushed her, made her drunk
 with Longe and Parole and dragged her into their agency, where they abused her
-for their projects again and again.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My Second Post!]]></title><description><![CDATA[Wow! I love blogging so much already. Did you know that “despite its name, salted duck eggs can also be made from
+for their projects again and again.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My Second Post!]]></title><description><![CDATA[Wow! I love blogging so much already. Did you know that "despite its name, salted duck eggs can also be made from
 chicken eggs, though the…]]></description><link>https://yellowsman/github.io/experience-to-blog-post/my-second-post/</link><guid isPermaLink="false">https://yellowsman/github.io/experience-to-blog-post/my-second-post/</guid><pubDate>Wed, 06 May 2015 23:46:37 GMT</pubDate><content:encoded>&lt;p&gt;Wow! I love blogging so much already.&lt;/p&gt;
-&lt;p&gt;Did you know that “despite its name, salted duck eggs can also be made from
+&lt;p&gt;Did you know that &quot;despite its name, salted duck eggs can also be made from
 chicken eggs, though the taste and texture will be somewhat different, and the
-egg yolk will be less rich.”?
+egg yolk will be less rich.&quot;?
 (&lt;a href=&quot;https://en.wikipedia.org/wiki/Salted_duck_egg&quot;&gt;Wikipedia Link&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;Yeah, I didn’t either.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hello World]]></title><description><![CDATA[This is my first post on my new fake blog! How exciting! I’m sure I’ll write a lot more interesting things in the future. Oh, and here’s a…]]></description><link>https://yellowsman/github.io/experience-to-blog-post/hello-world/</link><guid isPermaLink="false">https://yellowsman/github.io/experience-to-blog-post/hello-world/</guid><pubDate>Fri, 01 May 2015 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;This is my first post on my new fake blog! How exciting!&lt;/p&gt;
-&lt;p&gt;I’m sure I’ll write a lot more interesting things in the future.&lt;/p&gt;
-&lt;p&gt;Oh, and here’s a great quote from this Wikipedia on
+&lt;p&gt;Yeah, I didn&apos;t either.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hello World]]></title><description><![CDATA[This is my first post on my new fake blog! How exciting! I'm sure I'll write a lot more interesting things in the future. Oh, and here's a…]]></description><link>https://yellowsman/github.io/experience-to-blog-post/hello-world/</link><guid isPermaLink="false">https://yellowsman/github.io/experience-to-blog-post/hello-world/</guid><pubDate>Fri, 01 May 2015 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;This is my first post on my new fake blog! How exciting!&lt;/p&gt;
+&lt;p&gt;I&apos;m sure I&apos;ll write a lot more interesting things in the future.&lt;/p&gt;
+&lt;p&gt;Oh, and here&apos;s a great quote from this Wikipedia on
 &lt;a href=&quot;https://en.wikipedia.org/wiki/Salted_duck_egg&quot;&gt;salted duck eggs&lt;/a&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;A salted duck egg is a Chinese preserved food product made by soaking duck
@@ -109,39 +128,7 @@ wrapped in plastic, and vacuum packed. From the salt curing process, the
 salted duck eggs have a briny aroma, a gelatin-like egg white and a
 firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/experience-to-blog-post/static/8058f3f26913fea3b6a89a73344fe94a/e1596/salty_egg.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 75.31645569620254%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMB/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAEEBf/aAAwDAQACEAMQAAABgik0dWC//8QAGRABAAMBAQAAAAAAAAAAAAAAAQACERJC/9oACAEBAAEFAkqW7B5Zovtvk//EABcRAQADAAAAAAAAAAAAAAAAAAAREkH/2gAIAQMBAT8B1WX/xAAWEQEBAQAAAAAAAAAAAAAAAAAAESL/2gAIAQIBAT8BjT//xAAbEAABBAMAAAAAAAAAAAAAAAAAAQIRISIxMv/aAAgBAQAGPwK9GNocyS8hCj//xAAaEAADAQEBAQAAAAAAAAAAAAAAAREhQYGx/9oACAEBAAE/IXOrA43oOyg9wgU86OZMfwZKypT/2gAMAwEAAgADAAAAEMjv/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARIf/aAAgBAwEBPxARwyusv//EABcRAQEBAQAAAAAAAAAAAAAAAAEAIVH/2gAIAQIBAT8QOoVoX//EAB0QAQEAAgIDAQAAAAAAAAAAAAERADFhgSFB0eH/2gAIAQEAAT8QSpwaGjrBSrtHyF9iY8RpUnGRBGqtOcsiDE6fM3AgiXf5M//Z&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Chinese Salty Egg&quot;
-        title=&quot;Chinese Salty Egg&quot;
-        src=&quot;/experience-to-blog-post/static/8058f3f26913fea3b6a89a73344fe94a/828fb/salty_egg.jpg&quot;
-        srcset=&quot;/experience-to-blog-post/static/8058f3f26913fea3b6a89a73344fe94a/ff44c/salty_egg.jpg 158w,
-/experience-to-blog-post/static/8058f3f26913fea3b6a89a73344fe94a/a6688/salty_egg.jpg 315w,
-/experience-to-blog-post/static/8058f3f26913fea3b6a89a73344fe94a/828fb/salty_egg.jpg 630w,
-/experience-to-blog-post/static/8058f3f26913fea3b6a89a73344fe94a/0ede0/salty_egg.jpg 945w,
-/experience-to-blog-post/static/8058f3f26913fea3b6a89a73344fe94a/3ac88/salty_egg.jpg 1260w,
-/experience-to-blog-post/static/8058f3f26913fea3b6a89a73344fe94a/e1596/salty_egg.jpg 2048w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;./salty_egg.jpg&quot; alt=&quot;Chinese Salty Egg&quot;&gt;&lt;/p&gt;
 &lt;p&gt;You can also write code blocks here!&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; saltyDuckEgg &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;chinese preserved food product&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;table&gt;
@@ -214,7 +201,7 @@ Header 2
 &lt;li&gt;This is the first list item.&lt;/li&gt;
 &lt;li&gt;This is the second list item.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Here’s some example code:&lt;/p&gt;
+&lt;p&gt;Here&apos;s some example code:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Markdown.generate();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&gt; ## This is a header.
