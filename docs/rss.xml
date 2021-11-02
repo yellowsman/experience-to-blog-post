@@ -1,4 +1,54 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Experience |> Blog.post]]></title><description><![CDATA[No enginner, No programmer, No coder]]></description><link>https://yellowsman/github.io/experience-to-blog-post</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 05 Oct 2021 13:23:12 GMT</lastBuildDate><item><title><![CDATA[My Third Post]]></title><description><![CDATA[This weblog is written by Shigeru Ito. Hi! Hi! hogehoge This is a  too.]]></description><link>https://yellowsman/github.io/experience-to-blog-post/my-third-post/</link><guid isPermaLink="false">https://yellowsman/github.io/experience-to-blog-post/my-third-post/</guid><pubDate>Tue, 05 Oct 2021 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;This weblog is written by Shigeru Ito.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Experience |> Blog.post]]></title><description><![CDATA[No enginner, No programmer, No coder]]></description><link>https://yellowsman/github.io/experience-to-blog-post</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 02 Nov 2021 15:04:33 GMT</lastBuildDate><item><title><![CDATA[OTP:サーバ メモ]]></title><description><![CDATA[『プログラミングElixir』(第1版)の「第16章 OTP:サーバ」を読んだメモを記していく。 GenServerコールバック GenServerには6つのコールバックがある。 を使うことによって、ユーザーは実装する必要のあるコーバルックだけ実装すれば良い。 init…]]></description><link>https://yellowsman/github.io/experience-to-blog-post/genserver-memo/</link><guid isPermaLink="false">https://yellowsman/github.io/experience-to-blog-post/genserver-memo/</guid><pubDate>Tue, 02 Nov 2021 22:52:03 GMT</pubDate><content:encoded>&lt;p&gt;『プログラミングElixir』(第1版)の「第16章 OTP:サーバ」を読んだメモを記していく。&lt;/p&gt;
+&lt;h1&gt;GenServerコールバック&lt;/h1&gt;
+&lt;p&gt;GenServerには6つのコールバックがある。&lt;br&gt;
+&lt;code class=&quot;language-text&quot;&gt;use Genserver&lt;/code&gt;を使うことによって、ユーザーは実装する必要のあるコーバルックだけ実装すれば良い。&lt;/p&gt;
+&lt;h2&gt;init(start_arguments)&lt;/h2&gt;
+&lt;p&gt;新しいサーバ開始時にGenServerから呼ばれる。&lt;br&gt;
+サーバ開始に成功すれば&lt;code class=&quot;language-text&quot;&gt;{:ok, state}&lt;/code&gt;を返し、開始できないなら&lt;code class=&quot;language-text&quot;&gt;{:stop, reason}&lt;/code&gt;を返す。&lt;br&gt;
+タイムアウトの指定も可能。&lt;/p&gt;
+&lt;h2&gt;handle_call(request, from, state)&lt;/h2&gt;
+&lt;p&gt;クライアントが&lt;code class=&quot;language-text&quot;&gt;GenServer.call(pid, request)&lt;/code&gt;を使った時に呼ばれる。&lt;br&gt;
+requestパラメータは、リクエストの種類をアトムで渡す(&lt;code class=&quot;language-text&quot;&gt;:next_number&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;:set_number&lt;/code&gt;など)&lt;br&gt;
+fromパラメータは、クライアントのPIDとユニークタグを含むタプル。&lt;br&gt;
+stateパラメータは、サーバの状態を持つ。&lt;/p&gt;
+&lt;p&gt;成功時には&lt;code class=&quot;language-text&quot;&gt;{:reply, result, new_state}&lt;/code&gt;を返す。&lt;br&gt;
+実装されていないrequest種類が呼ばれると&lt;code class=&quot;language-text&quot;&gt;:bad_call&lt;/code&gt;エラーを返す。&lt;/p&gt;
+&lt;h2&gt;handle_cast(request, state)&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;GenServer.cast(pid, request)&lt;/code&gt;を使ったときに呼ばれる。&lt;br&gt;
+レスポンスが必要ない処理を実装する際に用いる。&lt;br&gt;
+成功時は&lt;code class=&quot;language-text&quot;&gt;{:noreply, new_state}&lt;/code&gt;や&lt;code class=&quot;language-text&quot;&gt;{:stop, reason, new_state}&lt;/code&gt;を返す。&lt;/p&gt;
+&lt;h2&gt;handle_info(info, state)&lt;/h2&gt;
+&lt;p&gt;timeoutメッセージ、リンクしたプロセスからの終了メッセージ、sendを用いてPIDへ送られたメッセージなど、callやcastリクエスト以外でやってくるメッセージを処理する。&lt;/p&gt;
+&lt;h2&gt;terminate(reason, state)&lt;/h2&gt;
+&lt;p&gt;サーバが終了しようとするときに呼ばれる。
+サーバに監視をつけてしまえば、これについて考える必要はない(要調査)&lt;/p&gt;
+&lt;h2&gt;code_change(from_version, state, extra)&lt;/h2&gt;
+&lt;p&gt;OTPが、走っているサーバを古いバージョンから新しいバージョンへ(無停止で)置き換える際に呼ばれる。&lt;br&gt;
+古い状態のフォーマットを新しいフォーマットへ変換するなどの処理を行う&lt;/p&gt;
+&lt;h2&gt;format_status(reason, [pdict, state])&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;:sys.get_status pid&lt;/code&gt;などサーバの状態の表示する際に表示方法をカスタマイズするために使う。&lt;/p&gt;
+&lt;h2&gt;callとcastのレスポンス&lt;/h2&gt;
+&lt;p&gt;callとcastのレスポンスには、いくつかのオプションを返すことができる&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;:hibernate&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;:hibernate&lt;/code&gt;をレスポンスに含めた場合、次のリクエストまでメモリ上からサーバの状態を取り除き、次のリクエストがあれば状態を読み込んで復活する。&lt;br&gt;
+メモリを節約できるがCPUを余分に使う。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;タイムアウトオプション&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;:infinite&lt;/code&gt;かミリ秒を渡してタイムアウト時間を指定できる。&lt;br&gt;
+ミリ秒が渡された場合は、その時間までにサーバが何もしない(次のリクエストを送らない？)ならタイムアウトメッセージが送られる。&lt;/p&gt;
+&lt;h3&gt;レスポンスのパターン&lt;/h3&gt;
+&lt;p&gt;下記二つはcall, cast共通&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{:noreply, new_state [, :hibernate | timeout]}
+
+{:stop, reason, new_state} // サーバに停止の合図をする&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;下記二つはhandle_callだけがレスポンスできる。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{:reply, response, new_state [ , :hibernate | timeout]} // クライアントにresponseを送る
+
+{:stop, reason, reply, new_state} // レスポンスを送り、サーバに停止の合図をする。&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;プロセスの名前を付ける&lt;/h1&gt;</content:encoded></item><item><title><![CDATA[My Third Post]]></title><description><![CDATA[This weblog is written by Shigeru Ito. Hi! Hi! hogehoge This is a  too.]]></description><link>https://yellowsman/github.io/experience-to-blog-post/my-third-post/</link><guid isPermaLink="false">https://yellowsman/github.io/experience-to-blog-post/my-third-post/</guid><pubDate>Tue, 05 Oct 2021 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;This weblog is written by Shigeru Ito.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; hogehoge &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; hoge2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;100&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
